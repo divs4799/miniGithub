@@ -4,7 +4,7 @@ const octokit = new Octokit({ auth: `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` }
 const {
     data: { login },
   } = await octokit.rest.users.getAuthenticated();
-  // console.log("Hello, %s", login);
+  console.log("Hello, %s", login);
   var user="";
   var currentPage=1;
   var totalPages=0;
