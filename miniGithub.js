@@ -1,10 +1,12 @@
 import { Octokit, App } from "https://esm.sh/octokit";
+// `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`
 
-const octokit = new Octokit({ auth: `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` });
+const octokit = new Octokit({ auth: `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` });
 const {
     data: { login },
   } = await octokit.rest.users.getAuthenticated();
   console.log("Hello, %s", login);
+
   var user="";
   var currentPage=1;
   var totalPages=0;
