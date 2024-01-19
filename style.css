@@ -1,0 +1,130 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0D1016;
+    color: white;
+}
+.Search{
+    background-color: #000408;
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Searchbar{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+
+    gap: 1rem;
+}
+.toggle{
+    display: none;
+}
+#owner{
+    width: 80%;
+    margin: 2rem auto;
+}
+.container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+}
+.owner-imgDiv{
+flex: 0.3 0 30%;
+min-width: 20rem;
+}
+.owner-image{
+    width: 80%;
+    border-radius: 50%;
+}
+
+.owner-link{
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.owner-content > *  {
+margin: 0.5rem auto;
+}
+.owner-name{
+    font-size: 2.2rem;
+}
+
+.repo-container{
+    width: 80%;
+    margin: 1rem auto;
+    border: 1px solid #31363C;
+}
+.repo-header{
+    background-color: #161A23;
+    min-height: 3rem;
+    font-size: 1.3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.entries{
+    font-size: 15px;
+}
+#select-label{
+    font-size: 10px;
+}
+.show{display: block;}
+.hide{
+    display: none;
+}
+.loader{
+    margin: 2rem;
+
+}
+.loader-cont{
+    text-align: center;
+}
+.loader-cont img{
+    width: 7rem;
+}
+.repo-List{
+    display: flex;
+    margin: 1.5rem ;
+    padding: 0;
+    /* gap: 3rem; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.repo-List li{
+    list-style: none;
+    flex: 1 0 35%;
+    margin: 1rem;
+}
+.repo-card{
+    height: 15rem;
+    width: 100%;
+}
+.card-p{
+font-size: 12px;
+}
+.card-content{
+    overflow: overlay;
+}
+.langBtn{
+    font-size: 15px;
+}
+.page-link{cursor: pointer;}
+.page-container{
+min-width: 15rem;
+margin: 1rem auto;
+display: flex;
+justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+    .Searchbar{width: 80%;}
+    .container{flex-wrap: wrap;}
+}
