@@ -128,3 +128,8 @@ justify-content: center;
     .Searchbar{width: 80%;}
     .container{flex-wrap: wrap;}
 }
+@media only screen and (max-width: 500px) {
+    .repo-List li{
+        flex: 1 0 80%;
+    }
+}
