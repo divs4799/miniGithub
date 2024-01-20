@@ -1,9 +1,10 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Poppins:wght@400;600&family=Prompt:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     background-color: #0D1016;
@@ -21,8 +22,11 @@ body{
     width: 30%;
     margin: 0 auto;
     display: flex;
-
+    font-family: 'Prompt', sans-serif;
     gap: 1rem;
+}
+.Searchbar input{
+    font-family: 'Prompt', sans-serif;
 }
 .toggle{
     display: none;
@@ -114,6 +118,9 @@ font-size: 12px;
 .card-content{
     overflow: overlay;
 }
+.card-header{
+    font-size: 18px;
+}
 .langBtn{
     font-size: 15px;
 }
@@ -132,4 +139,19 @@ justify-content: center;
     .repo-List li{
         flex: 1 0 80%;
     }
+}
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.f-400{
+    font-weight: 400;
+}
+.f-600{
+    font-weight: 600;
+}
+.f-500{
+    font-weight: 500;
+}
+.ibm{
+    font-family: 'IBM Plex Sans', sans-serif;
 }

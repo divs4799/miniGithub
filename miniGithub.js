@@ -112,11 +112,11 @@ const {
 
   function createCard(repoName,repoDesc,langList){
     var innerLi = ` <div class="card repo-card">
-    <div class="card-header">
+    <div class="card-header ibm f-500">
       ${repoName}
     </div>
-    <div class="card-body card-content">
-      <p  class="card-text card-p">${repoDesc}</p>`
+    <div class="card-body card-content poppins f-400">
+      <p  class="card-text card-p">${repoDesc ==null?"No Description in this Repository":repoDesc }</p>`
   langList.forEach(lang=>{
     innerLi+= `<button type="button" class="btn btn-sm btn-primary m-1 langBtn"   disabled>${lang}</button>`;
   })
